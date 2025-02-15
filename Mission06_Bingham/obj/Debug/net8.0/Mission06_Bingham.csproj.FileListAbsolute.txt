@@ -164,3 +164,4 @@ C:\Users\ashle\Source\Repos\Mission06_Bingham\Mission06_Bingham\obj\Debug\net8.0
 C:\Users\ashle\Source\Repos\Mission06_Bingham\Mission06_Bingham\obj\Debug\net8.0\Mission06_Bingham.pdb
 C:\Users\ashle\Source\Repos\Mission06_Bingham\Mission06_Bingham\obj\Debug\net8.0\Mission06_Bingham.genruntimeconfig.cache
 C:\Users\ashle\Source\Repos\Mission06_Bingham\Mission06_Bingham\obj\Debug\net8.0\ref\Mission06_Bingham.dll
+C:\Users\ashle\Source\Repos\Mission06_Bingham\Mission06_Bingham\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

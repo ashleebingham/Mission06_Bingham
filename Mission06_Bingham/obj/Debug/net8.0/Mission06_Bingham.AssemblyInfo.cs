@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission06_Bingham")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd9c0323b6e845380db2d265f1b8bf75cdce25e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fd4171b2e37f1032fd554751fe3cb796e0fbbde")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission06_Bingham")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission06_Bingham")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

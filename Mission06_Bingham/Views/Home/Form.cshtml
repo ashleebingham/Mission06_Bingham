@@ -17,7 +17,12 @@
     <input asp-for="Director" />
     <br />
     <label asp-for="Rating">Rating:</label>
-    <input asp-for="Rating" />
+    <select asp-for="Rating">
+        <option>G</option>
+        <option>PG</option>
+        <option>PG-13</option>
+        <option>R</option>
+    </select>
     <br />
     <label asp-for="Edited">Edited</label>
     <select asp-for="Edited">
