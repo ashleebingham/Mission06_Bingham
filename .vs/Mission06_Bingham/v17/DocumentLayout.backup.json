@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|c:\\users\\ashle\\source\\repos\\mission06_bingham\\mission06_bingham\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|solutionrelative:mission06_bingham\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|c:\\users\\ashle\\source\\repos\\mission06_bingham\\mission06_bingham\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|solutionrelative:mission06_bingham\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|c:\\users\\ashle\\source\\repos\\mission06_bingham\\mission06_bingham\\models\\movieaddition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|solutionrelative:mission06_bingham\\models\\movieaddition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|c:\\users\\ashle\\source\\repos\\mission06_bingham\\mission06_bingham\\models\\movieinformationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3378BADC-6644-42F5-973E-57A053FE7C57}|Mission06_Bingham\\Mission06_Bingham.csproj|solutionrelative:mission06_bingham\\models\\movieinformationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovieAddition.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Models\\MovieAddition.cs",
+              "RelativeDocumentMoniker": "Mission06_Bingham\\Models\\MovieAddition.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Models\\MovieAddition.cs",
+              "RelativeToolTip": "Mission06_Bingham\\Models\\MovieAddition.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:14:11.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Program.cs",
+              "RelativeDocumentMoniker": "Mission06_Bingham\\Program.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Program.cs",
+              "RelativeToolTip": "Mission06_Bingham\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:06:12.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieInformationContext.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Models\\MovieInformationContext.cs",
+              "RelativeDocumentMoniker": "Mission06_Bingham\\Models\\MovieInformationContext.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\Models\\MovieInformationContext.cs",
+              "RelativeToolTip": "Mission06_Bingham\\Models\\MovieInformationContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T07:01:30.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\appsettings.json",
+              "RelativeDocumentMoniker": "Mission06_Bingham\\appsettings.json",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Mission06_Bingham\\Mission06_Bingham\\appsettings.json",
+              "RelativeToolTip": "Mission06_Bingham\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T06:59:22.079Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"

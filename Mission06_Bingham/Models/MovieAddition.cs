@@ -4,6 +4,7 @@ namespace Mission06_Bingham.Models
 {
     public class MovieAddition
     {
+        [Key]
         public int MovieID { get; set; } // No need to require an ID (auto-generated)
 
         [Required(ErrorMessage = "Category is required.")]
