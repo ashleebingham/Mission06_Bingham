@@ -2,10 +2,11 @@
 
 namespace Mission06_Bingham.Models
 {
-    public class Categories
+    public class Category
     {
         [Key]
         public int CategoryId { get; set; }
-        public string? CategoryName { get; set; }
+        [Required]
+        public string CategoryName { get; set; }
     }
 }

@@ -3,15 +3,22 @@
     ViewData["Title"] = "Get to Know Joel";
 }
 
-<div class="text-center">
+<div class="container text-center my-5">
     <h1 class="display-4">Get to Know Joel</h1>
-    <p>
-        Joel has many interests other than movies including
-        Quick Wits Comedy where he performs regularly and the Baconsale!
+    <p class="lead">
+        Joel has many interests other than movies, including <strong>Quick Wits Comedy</strong> where he performs regularly and the <strong>Baconsale</strong> podcast!
     </p>
-    <a href="https://www.qwcomedy.com/">Quick Wits Comedy</a>
-    <br />
-    <a href="https://baconsale.com/">Baconsale</a>
-    <br />
-    <a href="https://baconsale.com/"><img src="~/img/baconsalekate.jpg" /></a>
+
+    <!-- Links with Bootstrap styling -->
+    <div class="my-3">
+        <a href="https://www.qwcomedy.com/" class="btn btn-primary btn-lg" target="_blank">Quick Wits Comedy</a>
+        <a href="https://baconsale.com/" class="btn btn-warning btn-lg ml-3" target="_blank">Baconsale</a>
+    </div>
+
+    <!-- Image with responsive class and margin -->
+    <div class="my-4">
+        <a href="https://baconsale.com/">
+            <img src="~/img/baconsalekate.jpg" class="img-fluid rounded shadow" alt="Baconsale Podcast">
+        </a>
+    </div>
 </div>

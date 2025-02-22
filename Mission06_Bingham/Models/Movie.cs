@@ -3,14 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission06_Bingham.Models
 {
-    public class MovieAddition
+    public class Movie
     {
         [Key]
         public int MovieId { get; set; } // No need to require an ID (auto-generated)
 
+
         [ForeignKey("CategoryId")]
         public int? CategoryId { get; set; }
-        public Categories? Category { get; set; }
+        public Category? Category { get; set; }
+
 
         [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; }

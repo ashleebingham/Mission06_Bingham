@@ -1,5 +1,11 @@
 ﻿@* This page gives a confirmation for users after submitting a form *@
 @{
+    ViewData["Title"] = "Confirmation";
 }
 
-<h2>Movie was received. Thank you.</h2>
+<div class="container text-center my-5">
+    <h2 class="display-4 text-success">Movie was received. Thank you!</h2>
+    <p class="lead">Your submission has been successfully received. We will review it soon.</p>
+
+    <a href="@Url.Action("MovieList", "Home")" class="btn btn-primary btn-lg mt-4">Back to Movie List</a>
+</div>

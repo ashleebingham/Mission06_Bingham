@@ -30,11 +30,11 @@ namespace Mission06.Controllers
                 .OrderBy(x => x.CategoryName)
                 .ToList();
 
-            return View(new MovieAddition());
+            return View(new Movie());
         }
 
         [HttpPost]
-        public IActionResult Form(MovieAddition response)
+        public IActionResult Form(Movie response)
         {
             if (ModelState.IsValid)
             {
@@ -64,19 +64,27 @@ namespace Mission06.Controllers
 
             // Fetch movies and handle potential NULL values
             var movies = _context.Movies
-                .Select(movie => new MovieAddition
-                {
-                    MovieId = movie.MovieId,
-                    Title = movie.Title ?? string.Empty, // Handle NULL title
-                    CategoryId = movie.CategoryId, // Handle NULL category
-                    Year = movie.Year, // Assuming Year is nullable, no need to handle explicitly
-                    Director = movie.Director ?? string.Empty, // Handle NULL director
-                    Rating = movie.Rating ?? string.Empty, // Handle NULL rating
-                    Edited = movie.Edited, // Assuming Edited is nullable, no need to handle explicitly
-                    LentTo = movie.LentTo ?? string.Empty, // Handle NULL lentTo
-                    Notes = movie.Notes ?? string.Empty // Handle NULL notes
-                })
+                .Include(x => x.Category)
+                .OrderBy(x => x.Title)
+                .Select(movie => new Movie
+                 {
+                     MovieId = movie.MovieId,
+                     Title = movie.Title ?? string.Empty, // Handle NULL title
+                     CategoryId = movie.CategoryId, // Handle NULL category
+                     Year = movie.Year, // Assuming Year is nullable, no need to handle explicitly
+                     Director = movie.Director ?? string.Empty, // Handle NULL director
+                     Rating = movie.Rating ?? string.Empty, // Handle NULL rating
+                     Edited = movie.Edited, // Assuming Edited is nullable, no need to handle explicitly
+                     LentTo = movie.LentTo ?? string.Empty, // Handle NULL lentTo
+                     Notes = movie.Notes ?? string.Empty // Handle NULL notes
+                 })
                 .ToList();
+
+            Console.WriteLine($"Movies count: {movies.Count}");
+            foreach (var movie in movies)
+            {
+                Console.WriteLine($"Movie: {movie.Title}, Category: {movie.Category?.CategoryName ?? "No Category"}");
+            }
 
             return View(movies);
         }
@@ -95,7 +103,7 @@ namespace Mission06.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(MovieAddition updatedInfo)
+        public IActionResult Edit(Movie updatedInfo)
         {
             _context.Update(updatedInfo);
             _context.SaveChanges();
@@ -113,7 +121,7 @@ namespace Mission06.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(MovieAddition addition)
+        public IActionResult Delete(Movie addition)
         {
             _context.Movies.Remove(addition);
             _context.SaveChanges();
