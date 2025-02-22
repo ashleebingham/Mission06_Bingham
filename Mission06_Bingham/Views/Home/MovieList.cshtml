@@ -1,0 +1,43 @@
+﻿@model List<MovieAddition>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No movies found.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="fw-bold">
+            <tr>
+                <td>Category</td>
+                <td>Title</td>
+                <td>Year</td>
+                <td>Director</td>
+                <td>Rating</td>
+                <td>Edited</td>
+                <td>LentTo</td>
+                <td>CopiedToPlex</td>
+                <td>Notes</td>
+            </tr>
+        </thead>
+
+        @foreach (var x in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@(x.Category?.CategoryName ?? "N/A")</td>  @* Ensure Category isn't null, fallback to "N/A" *@
+                    <td>@(x.Title ?? "N/A")</td>  @* Handle null Title, fallback to "N/A" *@
+                    <td>@(x.Year == 0 ? "N/A" : x.Year.ToString())</td>  @* Check if Year is 0 (default), fallback to "N/A" *@
+                    <td>@(x.Director ?? "N/A")</td>  @* Handle NULL in Director, fallback to "N/A" *@
+                    <td>@(x.Rating ?? "N/A")</td>  @* Handle NULL in Rating, fallback to "N/A" *@
+                    <td>@(x.Edited.HasValue ? (x.Edited.Value ? "Yes" : "No") : "N/A")</td>  @* Handle boolean field Edited, fallback to "N/A" if null *@
+                    <td>@(x.LentTo ?? "N/A")</td>  @* Handle NULL in LentTo, fallback to "N/A" *@
+                    <td>@(x.CopiedToPlex.HasValue ? (x.CopiedToPlex.Value ? "Yes" : "No") : "N/A")</td>  @* Handle boolean field CopiedToPlex, fallback to "N/A" if null *@
+                    <td>@(x.Notes ?? "N/A")</td>  @* Handle NULL in Notes, fallback to "N/A" *@
+                    <td><a class="btn btn-info" asp-controller="Home" asp-action="Edit" asp-route-id="@x.MovieId">Edit</a></td>
+                    <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@x.MovieId">Delete</a></td>
+                </tr>
+            </tbody>
+        }
+    </table>
+}
